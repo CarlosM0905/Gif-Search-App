@@ -1,5 +1,5 @@
+// IMPORTS
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const GifGridItem = ({ id, title, url }) => {
     return (
@@ -14,8 +14,4 @@ const GifGridItem = ({ id, title, url }) => {
     )
 }
 
-GifGridItem.propTypes = {
-
-}
-
-export default GifGridItem
+export default GifGridItem;

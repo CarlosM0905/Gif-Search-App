@@ -1,6 +1,9 @@
+// IMPORTS
 import React from 'react';
 import ReactDOM from 'react-dom';
+// APP
 import GifExpertApp from './GifExpertApp';
+// CSS
 import './index.css';
 
 

@@ -1,16 +1,13 @@
-
+// IMPORTS
 import React, { useState } from 'react'
+// COMPONENTS
 import AddCategory from './components/AddCategory';
 import GifGrid from './components/GifGrid';
 
 const GifExpertApp = () => {
 
-    // const categories = ;
     const [categories, setCategories] = useState(['']);
 
-    // const handleAdd = () => {
-    //     setCategories([...categories, 'Naruto']);
-    // }
     return (
         <div className="container-fluid">
             <div className="row mt-3">

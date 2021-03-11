@@ -1,24 +1,13 @@
+// IMPORTS
 import React from 'react'
-import { useFetchGifs } from '../hooks/useFetchGifs'
-// import { getGifs } from '../helpers/getGifs';
+// HOOKS
+import { useFetchGifs } from '../hooks/useFetchGifs';
+// COMPONENTS
 import GifGridItem from './GifGridItem';
 
 const GifGrid = ({ category }) => {
-    console.log(category);
-    // const [images, setImages] = useState([])
 
-    // // ngOnInit
-    // useEffect(() => {
-    //     getGifs(category)
-    //     .then(imgs => setImages(imgs));
-    // }, [category])
-
-    //ngOnChanges
-    // const [state, setstate] = useState(initialState)
     const { data: images, loading } = useFetchGifs(category);
-
-
-    // getGifs();
 
     return (
         <>
@@ -31,7 +20,6 @@ const GifGrid = ({ category }) => {
                             <div className="circle"></div>
                             <div className="circle"></div>
                         </div>
-                        <p className="loading-text">Cargando ...</p>
                     </div>
                 </div>
             }

@@ -1,13 +1,15 @@
+// IMPORTS
 import React, { useState } from 'react';
 import PropTypes from 'prop-types'
 
 const AddCategory = ({ setCategories }) => {
 
     const [inputValue, setInputValue] = useState('');
+    // Manejo de cambios en el input
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
     }
-
+    // Manejo de envio de la categoria
     const handleSubmit = (e) => {
         e.preventDefault();
         if (inputValue.trim().length > 2) {
